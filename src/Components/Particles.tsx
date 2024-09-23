@@ -53,7 +53,14 @@ const Particle = () => {
                         color: {
                             value: "#222", // black particles
                         },
-                        links: false,
+                        // links: true,
+                        links: {
+                            color: "#000000", // black links between particles
+                            distance: 150,
+                            enable: true,
+                            opacity: 0.5,
+                            width: 1,
+                        },
                         move: {
                             direction: "none",
                             enable: true,
@@ -69,7 +76,7 @@ const Particle = () => {
                                 enable: true,
                                 area: 800,
                             },
-                            value: 200,
+                            value: 70,
                         },
                         opacity: {
                             value: 0.5,

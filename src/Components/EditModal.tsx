@@ -49,8 +49,8 @@ const SimpleDialog = ({ onClose, open, todo }: SimpleDialogProps) => {
             <ListItem disableGutters>
                 <ListItemButton onClick={()=>handleSaveTodo}>
                     <div className="flex space-x-20">
-                        <Button className="bg-red-500 text-white">Save Changes</Button>
-                        <Button onClick={()=> handleClose}>Cancel</Button>
+                        <Button onClick={handleSaveTodo} className="bg-red-500 text-white">Save Changes</Button>
+                        <Button onClick={ handleClose}>Cancel</Button>
                     </div>
                 </ListItemButton>
             </ListItem>
