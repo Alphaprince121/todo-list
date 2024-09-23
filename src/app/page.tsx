@@ -9,6 +9,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import Particle from '@/Components/Particles';
 
 interface Todo {
   title: string;
@@ -74,6 +75,7 @@ const App = () => {
   return (
     <div>
       <Navbar addTodo={addTodo} />
+      <Particle/>
       <div>
         <div className='flex justify-center mt-8'>
           <h2 className='text-4xl font-bold'>Todo - List</h2>
@@ -131,6 +133,7 @@ const App = () => {
         />
       )}
     </div>
+    
   );
 };
 
