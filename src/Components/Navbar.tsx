@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ addTodo }) => {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                    <Button onClick={openDialog}  variant="outlined">
+                    <Button onClick={openDialog} className='border-red-500 text-red-500' variant="outlined">
                         <IoMdAdd size={34} />
                     </Button>
 
